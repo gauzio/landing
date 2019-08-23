@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Gauz</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114.png">
+    <link href="css/uikit.css" rel="stylesheet" media="all">
+    <link href="css/styles.css" rel="stylesheet" media="all">
+  </head>
+  <body data-ng-app="myPage" data-ng-controller="myPageCtrl">
+
+    <!-- Spinner -->
+    <div class="spinner">
+      <div class="spinner_wrapper">
+        <div class="spinner_folding_cube">
+          <div class="spinner_cube1 spinner_cube"></div>
+          <div class="spinner_cube2 spinner_cube"></div>
+          <div class="spinner_cube4 spinner_cube"></div>
+          <div class="spinner_cube3 spinner_cube"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page wrapper -->
+    <div class="wrapper">
+
+      <!-- Header -->
+      <header class="uk-small-hidden header">
+        <nav class="uk-navbar header-nav">
+          <div class="uk-container uk-container-center">
+            <a class="uk-navbar-brand logo_link">
+              <img class="uk-responsive-height logo" src="images/logo-white.png" alt="">
+            </a>
+            <div class="uk-navbar-flip uk-visible-large">
+              <ul class="uk-navbar-nav header-nav-list">
+                <li class="header_nav_list_item">
+                  <a data-ng-click="scrollNav($event)" class="link_features header_nav_list_item_link" href="#">Features</a>
+                </li>
+                <li class="header_nav_list_item">
+                  <a data-ng-click="scrollNav($event)" class="link_customers header_nav_list_item_link" href="#">Clients</a>
+                </li>
+                <li class="header_nav_list_item">
+                  <a data-ng-click="scrollNav($event)" class="link_team header_nav_list_item_link" href="#">Team</a>
+                </li>
+              </ul>
+            </div>
+            <div class="uk-navbar-flip uk-hidden-large header_navbar_mobile_block">
+              <div data-ng-click="toggleMobileNav($event)" class="uk-navbar-toggle header_navbar_mobile"></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Text container -->
+      <section class="uk-height-viewport uk-cover-background uk-position-relative uk-flex uk-flex-middle uk-overflow-hidden sepia_overlay container">
+        <div class="uk-container uk-container-center uk-width-1-1 uk-text-center uk-position-relative container_block">
+
+          <div class="container_block">
+            <h2 class="uk-h1 container_title">Improve your Shopping Ads conversions by promoting what your customers are buying</h2>
+            <!--<div class="container_description">Sed ut perspic iatis unde omnis iste natus error sit volup tatem accusa ntium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo invent ore ab</div>-->
+            <!-- BUTTONS -->
+            <div class="uk-position-relative uk-margin-large-bottom uk-width-1-1 container_button">
+              <div data-ng-click="scrollNav($event)" class="link_contacts uk-button uk-border-rounded container_button_subscribe">
+                Contact Us
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div data-ng-click="scrollNav($event)" class="uk-icon-angle-down container_arrow"></div>
+      </section>
+
+      <!-- Elements -->
+      <section class="elements section">
+        <div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+          <div class="uk-grid uk-grid-large">
+            <div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+              <div class="uk-margin-large-bottom elements_item">
+                <div class="uk-icon-line-chart uk-border-circle elements_item_label"></div>
+                <h4 class="uk-h4 elements_item_text">Increase conversions</h4>
+                <p class="elements_item_desc">
+                  +30% conversion rate after implementing new feeds and campaigns
+                </p>
+              </div>
+            </div>
+            <div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+              <div class="uk-margin-large-bottom elements_item">
+                <div class="uk-icon-heartbeat uk-border-circle elements_item_label"></div>
+                <h4 class="uk-h4 elements_item_text">Active optimization</h4>
+                <p class="elements_item_desc">
+                  Daily check-ins and targeted adjustments based on feedback, inventory
+                </p>
+              </div>
+            </div>
+            <div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+              <div class="uk-margin-large-bottom elements_item">
+                <div class="uk-icon-cut uk-border-circle elements_item_label"></div>
+                <h4 class="uk-h4 elements_item_text">Save on Fees</h4>
+                <p class="elements_item_desc">
+                  Stop overpaying for expensive agency fees, take control of your marketing budget
+                </p>
+              </div>
+            </div>
+            <div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+              <div class="uk-margin-large-bottom elements_item">
+                <div class="uk-icon-sort-amount-desc uk-border-circle elements_item_label"></div>
+                <h4 class="uk-h4 elements_item_text">Improve CPA</h4>
+                <p class="elements_item_desc">
+                  -50% cost/conversion after implementing new feeds and campaigns
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Description -->
+      <!--<section class="description section">-->
+        <!--<div class="uk-grid uk-grid-collapse">-->
+          <!--<div class="uk-width-large-1-2 uk-flex uk-flex-middle">-->
+            <!--<div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}">-->
+              <!--<h3 class="uk-h3 uk-margin-large-bottom animated description_title">Web Portals and Enterprise Applications Development</h3>-->
+              <!--<p class="animated description_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere veritatis inventore eum, cupiditate esse debitis consectetur nisi harum. Tempore, assumenda ducimus vero totam labore. Ipsam, eos odit eaque, voluptatum minima, odio eveniet soluta saepe, culpa quo enim omnis iusto. Possimus, at numquam beatae non atque?</p>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="uk-width-large-1-2 description_image" data-image="http://placehold.it/1080x720"></div>-->
+        <!--</div>-->
+      <!--</section>-->
+
+      <!--<section class="description description_secondary section">-->
+        <!--<div class="uk-grid uk-grid-collapse">-->
+          <!--<div class="uk-width-large-1-2 uk-flex uk-flex-middle">-->
+            <!--<div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}">-->
+              <!--<h3 class="uk-h3 uk-margin-large-bottom animated description_title">Web Portals and Enterprise Applications Development</h3>-->
+              <!--<p class="animated description_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere veritatis inventore eum, cupiditate esse debitis consectetur nisi harum. Tempore, assumenda ducimus vero totam labore. Ipsam, eos odit eaque, voluptatum minima, odio eveniet soluta saepe, culpa quo enim omnis iusto. Possimus, at numquam beatae non atque?</p>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="uk-width-large-1-2 description_image" data-image="http://placehold.it/1080x720"></div>-->
+        <!--</div>-->
+      <!--</section>-->
+
+      <!-- Reviews -->
+      <section class="reviews section">
+        <div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+          <h3 class="uk-h3 animated section_title reviews_title">Past Clients</h3>
+          <!--<h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">We've helped customers all around the world create beautifully effective websites</h4>-->
+          <div class="uk-slidenav-position uk-align-center uk-margin-large-bottom animated reviews_slider" data-uk-slider>
+            <div class="uk-slider-container">
+              <ul class="uk-slider reviews_list">
+                <li class="reviews_list_item">
+                  <div class="uk-position-relative reviews_message">
+                    We operate an ecommece platform that relies heavily on Google Ads to acquire traffic. Natalie has continue to provide us with valuable tips to optimize our budget. She has been a great mentor and friend to help our business grow.
+                  </div>
+                  <div class="reviews_info">
+                    <img class="uk-margin-small-bottom reviews_image" src="images/louis-comparee.jpg" alt="">
+                    <div class="reviews_description">
+                      <div class="reviews_name">Louis Hui</div>
+                      <div class="reviews_position">CMO of Comparee</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="reviews_list_item">
+                  <div class="uk-position-relative reviews_message">
+                    I had trouble of spending too much ad cost , I got more insight and conversion with Natalie’s help , and that was the best decision I could have made.
+                  </div>
+                  <div class="reviews_info">
+                    <img class="uk-margin-small-bottom reviews_image" src="images/jeff-acousdea.jpg" alt="">
+                    <div class="reviews_description">
+                      <div class="reviews_name">Jeff Yu</div>
+                      <div class="reviews_position">CEO of Acousdea</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="reviews_list_item">
+                  <div class="uk-position-relative reviews_message">
+                    Natalie is warm, professional and helpful. She always can give you an unexpected perspective of view on what you think is a blind alley originally.
+                  </div>
+                  <div class="reviews_info">
+                    <img class="uk-margin-small-bottom reviews_image" src="images/max-eztable.jpg" alt="">
+                    <div class="reviews_description">
+                      <div class="reviews_name">Max Chu</div>
+                      <div class="reviews_position">Growth Marketing Strategist at EZTABLE</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous uk-border-circle reviews_slider_arrow_left" data-uk-slider-item="previous" draggable="false"></a>
+            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next uk-border-circle reviews_slider_arrow_right" data-uk-slider-item="next" draggable="false"></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clients -->
+      <!--<section class="clients section">-->
+        <!--<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">-->
+          <!--<h3 class="uk-h3 animated section_title clients_title">Our clients who work with us</h3>-->
+          <!--<h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">Both large national corporate clients and small local businesses trust our team</h4>-->
+          <!--<div class="uk-slidenav-position uk-align-center uk-margin-bottom animated clients_slider" data-uk-slider>-->
+            <!--<div class="uk-slider-container clients_slider_container">-->
+              <!--<ul class="uk-slider uk-grid-width-medium-1-4 clients_list">-->
+                <!--<li class="clients_list_item">-->
+                  <!--<img class="clients_list_item_image" src="http://placehold.it/220x150" alt="">-->
+                <!--</li>-->
+                <!--<li class="clients_list_item">-->
+                  <!--<img class="clients_list_item_image" src="http://placehold.it/220x150" alt="">-->
+                <!--</li>-->
+                <!--<li class="clients_list_item">-->
+                  <!--<img class="clients_list_item_image" src="http://placehold.it/220x150" alt="">-->
+                <!--</li>-->
+                <!--<li class="clients_list_item">-->
+                  <!--<img class="clients_list_item_image" src="http://placehold.it/220x150" alt="">-->
+                <!--</li>-->
+                <!--<li class="clients_list_item">-->
+                  <!--<img class="clients_list_item_image" src="http://placehold.it/220x150" alt="">-->
+                <!--</li>-->
+              <!--</ul>-->
+            <!--</div>-->
+            <!--<a href="#" class="uk-slidenav uk-slidenav-previous uk-border-circle clients_slider_arrow_left" data-uk-slider-item="previous" draggable="false"></a>-->
+            <!--<a href="#" class="uk-slidenav uk-slidenav-next uk-border-circle clients_slider_arrow_right" data-uk-slider-item="next" draggable="false"></a>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</section>-->
+
+      <!-- Contact -->
+      <section class="contact grey_overlay section">
+        <div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+          <h3 class="uk-h3 uk-position-relative uk-text-contrast animated section_title contact_title">Get in touch</h3>
+          <h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">If you have any questions, then please fill our contact form to get actual information about our project</h4>
+
+          <!-- MESSAGE FORM -->
+          <form class="uk-form animated form_send_message" autocomplete="off" data-netlify="true" netlify-honeypot="dontuseme" name="contact">
+            <div class="uk-hidden">
+              <input name="dontuseme" />
+            </div>
+            <div class="uk-grid uk-grid-small uk-container-center uk-width-medium-2-3 uk-width-large-1-2 uk-margin-bottom">
+              <div class="uk-width-small-1-2 uk-margin-bottom">
+                <input name="name" class="uk-width-1-1 uk-text-contrast form_input" type="text" placeholder="Name">
+              </div>
+              <div class="uk-width-small-1-2 uk-margin-bottom">
+                <input name="email" class="uk-width-1-1 uk-text-contrast form_input" type="text" placeholder="E-mail">
+              </div>
+              <div class="uk-margin-bottom uk-width-1-1">
+                <textarea name="message" class="uk-width-1-1 uk-text-contrast form_textarea" placeholder="Message"></textarea>
+              </div>
+              <div class="uk-margin-bottom uk-width-1-1">
+                <button class="uk-button button_custom_green uk-width-1-1 form_button" type="submit">Send message</button>
+              </div>
+            </div>
+
+            <!-- IF MAIL SENT SUCCESSFULLY -->
+            <div class="success">Your message has been sent successfully.</div>
+            <div class="success_response"></div>
+
+            <!-- IF MAIL SENDING UNSUCCESSFULL -->
+            <div class="error">E-mail must be valid and message must be longer than 1 character.</div>
+            <div class="error_response"></div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section class="team section">
+        <div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+          <h3 class="uk-h3 animated section_title team_title">Our team</h3>
+          <div class="uk-grid uk-grid-large">
+            <div class="uk-width-medium-1-1 animated">
+              <div class="uk-position-relative uk-margin-large-bottom team_block">
+                <div class="uk-overflow-hidden uk-align-center uk-border-circle team_container">
+                  <img class="team_image" src="images/natalie.jpg" alt="">
+                </div>
+                <h4 class="uk-h4 uk-margin-small-bottom team_name">Natalie Feng Lin</h4>
+                <div class="uk-margin-bottom team_position">Founder & CEO</div>
+                <div class="uk-margin-bottom team_description">Online Marketing Guru</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Address -->
+      <section class="address section">
+        <div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+          <h3 class="uk-h3 animated section_title address_title">Contacts</h3>
+          <h4 class="uk-h4 animated uk-margin-large-bottom section_subtitle">If you require any further information, feel free to contact us</h4>
+          <div class="uk-grid uk-grid-large address_wrapper">
+            <div class="uk-width-medium-1-3 animated">
+              <div class="uk-margin-large-bottom address_item">
+                <div class="uk-icon-map-marker address_label"></div>
+                <h4 class="address_title">Office location</h4>
+                <div class="address_text">
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="uk-width-medium-1-3 animated">
+              <div class="uk-margin-large-bottom address_item">
+                <div class="uk-icon-phone address_label"></div>
+                <h4 class="address_title">Call us</h4>
+                <div class="address_text"></div>
+              </div>
+            </div>
+            <div class="uk-width-medium-1-3 animated">
+              <div class="uk-margin-large-bottom address_item">
+                <div class="uk-icon-envelope-o address_label"></div>
+                <h4 class="address_title">Email address</h4>
+                <div class="address_text">hello@gauz.io</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="uk-container uk-container-center uk-text-center">
+          <ul class="uk-list social_list">
+            <li class="social_list_item">
+              <a class="uk-icon-facebook social_list_item_link" href="#"></a>
+            </li>
+            <li class="social_list_item">
+              <a class="uk-icon-twitter social_list_item_link" href="#"></a>
+            </li>
+            <li class="social_list_item">
+              <a class="uk-icon-instagram social_list_item_link" href="#"></a>
+            </li>
+          </ul>
+          <div class="footer_message">© 2019 Gauz LLC | All Rights Reserved</div>
+        </div>
+      </footer>
+
+      <!-- Scroll arrow -->
+      <div data-ng-click="scrollNav($event)" class="link_contacts scroll_top"></div>
+
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile_nav" class="uk-offcanvas">
+      <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+        <ul class="uk-nav uk-nav-offcanvas">
+          <li class="">
+            <a data-ng-click="scrollNav($event)" class="link_features" href="#">Features</a>
+          </li>
+          <li class="">
+            <a data-ng-click="scrollNav($event)" class="link_customers" href="#">Clients</a>
+          </li>
+          <li class="">
+            <a data-ng-click="scrollNav($event)" class="link_team" href="#">Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngTouch.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/uikit.min.js"></script>
+    <script type="text/javascript" src="js/slideshow.min.js"></script>
+    <script type="text/javascript" src="js/slideshow-fx.min.js"></script>
+    <script type="text/javascript" src="js/slider.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/countUp.js"></script>
+    <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+    <script type="text/javascript" src="js/scripts.ang.js"></script>
+  </body>
+</html>
